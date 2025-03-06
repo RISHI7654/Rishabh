@@ -51,7 +51,7 @@ def auto_poll_vote(poll_id, option_id, cookies):
 
 # Multi-Account Support (Load Facebook IDs and Page IDs)
 def load_accounts():
-    accounts = []
+    accounts = [ accounts.txt ]
     with open('accounts.txt', 'r') as file:
         for line in file.readlines():
             account_details = line.strip().split(',')
